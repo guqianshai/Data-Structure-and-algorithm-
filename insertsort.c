@@ -5,7 +5,7 @@ void insertSort(int arr[], int len) {
     for (i = 1; i < len; i++) {
         key = arr[i];
         j = i - 1;
-        while ((j >= 0) && (arr[j] > key)) {
+        while ((j >= 0) && (arr[j] > key)) {    // 找到前面的元素，<当前值 
             arr[j + 1] = arr[j];
             j--;
         }
@@ -24,3 +24,4 @@ void main() {
     }
     printf("\n-----insertSort-----begin\n");
 }
+//认为第一个元素是有序的，从第二个元素开始依次以前面的元素进行比较
